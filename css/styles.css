@@ -1203,3 +1203,21 @@ nav#filter li {
 .isotopeWrapper article {
 	margin: 0px;
 }
+
+/*Styles vidéo*/
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 2rem; /* Ajustez cette valeur selon vos besoins */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 2rem; /* Ajustez cette valeur selon vos besoins */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 2rem); /* Réduisez la hauteur de l'iframe pour compenser le padding-top */
+}
+
